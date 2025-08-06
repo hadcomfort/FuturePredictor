@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Synthetic Supper</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        #loading-indicator { display: none; }
+    </style>
+</head>
+<body>
+    <h1>The Synthetic Supper</h1>
+    <p>Generate poignant "memory transcripts" from a speculative future, contrasting authentic past experiences with a technologically mediated present.</p>
+
+    <form id="story-form">
+        <label for="protagonist">Protagonist:</label><br>
+        <input type="text" id="protagonist" name="protagonist" value="an elderly woman in New Kyoto, 2092" required><br><br>
+
+        <label for="past_experience">Past Experience:</label><br>
+        <input type="text" id="past_experience" name="past_experience" value="eating a wild-foraged meal with her grandfather" required><br><br>
+
+        <label for="present_reality">Present Reality:</label><br>
+        <input type="text" id="present_reality" name="present_reality" value="consuming nutrient-optimized, 3D-printed food paste" required><br><br>
+
+        <label for="catalyst_event">Catalyst Event:</label><br>
+        <input type="text" id="catalyst_event" name="catalyst_event" value="The Great Spore Blight" required><br><br>
+
+        <label for="narrative_format">Narrative Format:</label><br>
+        <select id="narrative_format" name="narrative_format" required>
+            <option value="Memory Transcript">Memory Transcript</option>
+            <option value="Personal Diary Entry">Personal Diary Entry</option>
+            <option value="Audio Log">Audio Log</option>
+        </select><br><br>
+
+        <button type="submit">Generate Memory</button>
+    </form>
+
+    <div id="story-output">
+        <div id="loading-indicator">Loading...</div>
+    </div>
+
+</body>
+</html>
