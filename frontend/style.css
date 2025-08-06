@@ -1,0 +1,98 @@
+/* General Body Styles */
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+    font-family: 'Orbitron', sans-serif; /* A futuristic, stylized font */
+    color: #00ff99;
+    text-align: center;
+    text-shadow: 0 0 5px #00ff99;
+}
+
+/* Form Styling */
+form {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #00ff99;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #00ff99;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #00ff99;
+    color: #f0f0f0;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00ff99;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'Orbitron', sans-serif;
+}
+
+button:hover {
+    background-color: #00e68a;
+}
+
+/* Story Output */
+#story-output {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    border: 1px solid #00ff99;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Loading Indicator */
+#loading-indicator {
+    display: none;
+    text-align: center;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #00ff99;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+}

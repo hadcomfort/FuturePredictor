@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Synthetic Supper</title>
-    <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
-        #loading-indicator { display: none; }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>The Synthetic Supper</h1>
@@ -37,7 +37,9 @@
     </form>
 
     <div id="story-output">
-        <div id="loading-indicator">Loading...</div>
+        <div id="loading-indicator">
+            <div class="spinner"></div>
+        </div>
     </div>
 
 </body>
