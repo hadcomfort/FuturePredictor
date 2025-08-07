@@ -6,21 +6,40 @@ The Synthetic Supper is a web application that generates poignant "memory transc
 
 ## How to Use
 
+### Backend Setup
+
+1.  **Navigate to the `backend` directory:**
+    ```bash
+    cd backend
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Set up your environment variables:**
+    *   Create a file named `.env` in the `backend` directory.
+    *   Add your AI provider's API key to the `.env` file like this:
+        ```
+        AI_API_KEY=your_api_key_here
+        ```
+4.  **Start the backend server:**
+    ```bash
+    node server.js
+    ```
+    The server will start on port 3001.
+
+### Frontend Usage
+
 1.  **Open `frontend/index.html` in your web browser.**
-2.  **Fill out the form with the following parameters:**
-    *   **Protagonist:** Describe the main character of the story (e.g., "an elderly woman in New Kyoto, 2092").
-    *   **Past Experience:** Detail a memory from the protagonist's past (e.g., "eating a wild-foraged meal with her grandfather").
-    *   **Present Reality:** Describe the protagonist's current reality (e.g., "consuming nutrient-optimized, 3D-printed food paste").
-    *   **Catalyst Event:** The event that caused the shift from the past to the present (e.g., "The Great Spore Blight").
-    *   **Narrative Format:** Choose the format of the story (e.g., "Memory Transcript", "Personal Diary Entry", "Audio Log").
+2.  **Fill out the form with your desired story parameters.**
 3.  **Click "Generate Memory".**
 4.  The generated story will appear below the form.
 
 ## Technical Stack
 
-*   **Frontend:** HTML, CSS
-*   **Backend:** Node.js, Express
+*   **Frontend:** HTML, CSS, JavaScript
+*   **Backend:** Node.js, Express, Axios
 
 ## Project Status
 
-This project is currently under development. The frontend and backend have been set up, but the connection between them has not yet been implemented. The story generation is currently using a placeholder.
+The core functionality is in place. The frontend is connected to the backend, which in turn calls a large language model to generate stories. Further improvements are planned (see `todo.md`).
